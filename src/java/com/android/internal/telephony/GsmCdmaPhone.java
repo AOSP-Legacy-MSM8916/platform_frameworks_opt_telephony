@@ -2652,6 +2652,7 @@ public class GsmCdmaPhone extends Phone {
                 mIccRecords.set(newUiccApplication.getIccRecords());
                 registerForIccRecordEvents();
                 mIccPhoneBookIntManager.updateIccRecords(mIccRecords.get());
+                updateDataConnectionTracker();
             }
         }
     }
